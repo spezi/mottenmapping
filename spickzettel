@@ -1,0 +1,27 @@
+focal length 16mm?
+
+BUG!! 
+ossia score 
+Object Display rotate z und y sind gleich also drehen beide um die z achse
+
+git clone --recursive -j16 https://github.com/spezi/score.git
+cd score
+./tools/developer.sh
+
+rebuild
+cd build-developer
+cmake --build .
+
+after add new code like addon or plugin
+cmake .
+cmake --build .
+
+
+# mapping
+* blender edit mode selected mesh
+* uv unwrap projection bounds
+* uv export as svg
+* generate isf shader 
+python3 svg_to_isf.py low_poly_dragonfly_new.svg --isf
+* copy isf shader code and replace in ossia score
+* compile -- done
