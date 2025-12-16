@@ -1,0 +1,233 @@
+/*{
+  "DESCRIPTION": "Low Poly - Individual Polygon Alpha Control",
+  "CREDIT": "Generated from SVG",
+  "ISFVSN": "2",
+  "INPUTS": [
+    {
+      "NAME": "globalAlpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Global Alpha"
+    },
+    {
+      "NAME": "poly0_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 1 Alpha"
+    },
+    {
+      "NAME": "poly1_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 2 Alpha"
+    },
+    {
+      "NAME": "poly2_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 3 Alpha"
+    },
+    {
+      "NAME": "poly3_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 4 Alpha"
+    },
+    {
+      "NAME": "poly4_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 5 Alpha"
+    },
+    {
+      "NAME": "poly5_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 6 Alpha"
+    },
+    {
+      "NAME": "poly6_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 7 Alpha"
+    },
+    {
+      "NAME": "poly7_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 8 Alpha"
+    },
+    {
+      "NAME": "poly8_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 9 Alpha"
+    },
+    {
+      "NAME": "poly9_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 10 Alpha"
+    },
+    {
+      "NAME": "poly10_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 11 Alpha"
+    },
+    {
+      "NAME": "poly11_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 12 Alpha"
+    },
+    {
+      "NAME": "poly12_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 13 Alpha"
+    },
+    {
+      "NAME": "poly13_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 14 Alpha"
+    },
+    {
+      "NAME": "poly14_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 15 Alpha"
+    },
+    {
+      "NAME": "poly15_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 16 Alpha"
+    },
+    {
+      "NAME": "poly16_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 17 Alpha"
+    },
+    {
+      "NAME": "poly17_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 18 Alpha"
+    },
+    {
+      "NAME": "polygonColor",
+      "TYPE": "color",
+      "DEFAULT": [0.8, 0.8, 0.8, 1.0],
+      "LABEL": "Polygon Color"
+    },
+    {
+      "NAME": "backgroundColor",
+      "TYPE": "color",
+      "DEFAULT": [0.0, 0.0, 0.0, 0.0],
+      "LABEL": "Background Color"
+    }
+  ]
+}*/
+
+// Point-in-triangle test using barycentric coordinates
+bool pointInTriangle(vec2 p, vec2 a, vec2 b, vec2 c) {
+  vec2 v0 = c - a;
+  vec2 v1 = b - a;
+  vec2 v2 = p - a;
+  
+  float dot00 = dot(v0, v0);
+  float dot01 = dot(v0, v1);
+  float dot02 = dot(v0, v2);
+  float dot11 = dot(v1, v1);
+  float dot12 = dot(v1, v2);
+  
+  float denom = dot00 * dot11 - dot01 * dot01;
+  if (abs(denom) < 0.0001) return false;
+  
+  float invDenom = 1.0 / denom;
+  float u = (dot11 * dot02 - dot01 * dot12) * invDenom;
+  float v = (dot00 * dot12 - dot01 * dot02) * invDenom;
+  
+  return (u >= -0.0001) && (v >= -0.0001) && (u + v <= 1.0001);
+}
+
+void main() {
+  vec2 uv = isf_FragNormCoord;
+  vec2 pixelCoord = uv * vec2(1920.0, 1080.0);
+  
+  vec4 color = backgroundColor;
+  float alpha = 0.0;
+  
+  if (pointInTriangle(pixelCoord, vec2(806.214, 822.344), vec2(829.540, 877.307), vec2(806.214, 932.270))) { alpha = poly0_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(867.282, 788.374), vec2(829.540, 877.307), vec2(806.214, 822.344))) { alpha = poly1_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(806.214, 932.270), vec2(829.540, 877.307), vec2(867.282, 966.240))) { alpha = poly2_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(905.024, 877.307), vec2(829.540, 877.307), vec2(867.282, 788.374))) { alpha = poly3_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(905.024, 877.307), vec2(867.282, 966.240), vec2(829.540, 877.307))) { alpha = poly4_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(867.282, 788.374), vec2(928.350, 822.344), vec2(905.024, 877.307))) { alpha = poly5_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(867.282, 966.240), vec2(928.350, 932.270), vec2(928.350, 822.344))) { alpha = poly6_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(867.282, 966.240), vec2(928.350, 822.344), vec2(867.282, 788.374))) { alpha = poly6_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(867.282, 966.240), vec2(867.282, 788.374), vec2(806.214, 822.344))) { alpha = poly6_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(867.282, 966.240), vec2(806.214, 822.344), vec2(806.214, 932.270))) { alpha = poly6_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(928.350, 822.344), vec2(928.350, 932.270), vec2(905.024, 877.307))) { alpha = poly7_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(928.350, 932.270), vec2(867.282, 966.240), vec2(905.024, 877.307))) { alpha = poly8_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(985.689, 932.270), vec2(1009.015, 877.307), vec2(1046.757, 966.240))) { alpha = poly9_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1084.499, 877.307), vec2(1046.757, 966.240), vec2(1009.015, 877.307))) { alpha = poly10_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(985.689, 822.344), vec2(1009.015, 877.307), vec2(985.689, 932.270))) { alpha = poly11_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1046.757, 788.374), vec2(1009.015, 877.307), vec2(985.689, 822.344))) { alpha = poly12_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1084.499, 877.307), vec2(1009.015, 877.307), vec2(1046.757, 788.374))) { alpha = poly13_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1046.757, 966.240), vec2(1107.825, 932.270), vec2(1107.825, 822.344))) { alpha = poly14_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1046.757, 966.240), vec2(1107.825, 822.344), vec2(1046.757, 788.374))) { alpha = poly14_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1046.757, 966.240), vec2(1046.757, 788.374), vec2(985.689, 822.344))) { alpha = poly14_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1046.757, 966.240), vec2(985.689, 822.344), vec2(985.689, 932.270))) { alpha = poly14_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1046.757, 788.374), vec2(1107.825, 822.344), vec2(1084.499, 877.307))) { alpha = poly15_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1107.825, 822.344), vec2(1107.825, 932.270), vec2(1084.499, 877.307))) { alpha = poly16_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1107.825, 932.270), vec2(1046.757, 966.240), vec2(1084.499, 877.307))) { alpha = poly17_alpha; }
+  
+  // Apply color parameter based on alpha
+  if (alpha > 0.0) {
+    color = polygonColor;
+    color.a = alpha * globalAlpha;
+  }
+  gl_FragColor = color;
+}

@@ -25,3 +25,6 @@ cmake --build .
 python3 svg_to_isf.py low_poly_dragonfly_new.svg --isf
 * copy isf shader code and replace in ossia score
 * compile -- done
+
+# blender 
+normals shif+n alt+n 
