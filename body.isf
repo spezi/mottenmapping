@@ -244,38 +244,6 @@
       "LABEL": "Polygon 29 Alpha"
     },
     {
-      "NAME": "poly29_alpha",
-      "TYPE": "float",
-      "DEFAULT": 1.0,
-      "MIN": 0.0,
-      "MAX": 1.0,
-      "LABEL": "Polygon 30 Alpha"
-    },
-    {
-      "NAME": "poly30_alpha",
-      "TYPE": "float",
-      "DEFAULT": 1.0,
-      "MIN": 0.0,
-      "MAX": 1.0,
-      "LABEL": "Polygon 31 Alpha"
-    },
-    {
-      "NAME": "poly31_alpha",
-      "TYPE": "float",
-      "DEFAULT": 1.0,
-      "MIN": 0.0,
-      "MAX": 1.0,
-      "LABEL": "Polygon 32 Alpha"
-    },
-    {
-      "NAME": "poly32_alpha",
-      "TYPE": "float",
-      "DEFAULT": 1.0,
-      "MIN": 0.0,
-      "MAX": 1.0,
-      "LABEL": "Polygon 33 Alpha"
-    },
-    {
       "NAME": "polygonColor",
       "TYPE": "color",
       "DEFAULT": [0.8, 0.8, 0.8, 1.0],
@@ -319,60 +287,60 @@ void main() {
   vec4 color = backgroundColor;
   float alpha = 0.0;
   
-  if (pointInTriangle(pixelCoord, vec2(957.020, 755.277), vec2(957.020, 833.688), vec2(849.334, 833.688))) { alpha = poly0_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(849.334, 833.688), vec2(957.020, 833.688), vec2(957.020, 912.098))) { alpha = poly1_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(849.334, 833.688), vec2(957.020, 912.098), vec2(1064.705, 833.688))) { alpha = poly2_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(849.334, 833.688), vec2(1064.705, 833.688), vec2(957.020, 755.277))) { alpha = poly2_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1064.705, 833.688), vec2(957.020, 912.098), vec2(957.020, 833.688))) { alpha = poly3_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1064.705, 833.688), vec2(957.020, 833.688), vec2(957.020, 755.277))) { alpha = poly4_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1001.888, 779.295), vec2(1001.888, 452.586), vec2(1046.757, 452.586))) { alpha = poly5_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1001.888, 779.295), vec2(1046.757, 452.586), vec2(1046.757, 779.295))) { alpha = poly5_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1001.888, 452.586), vec2(1001.888, 779.295), vec2(912.151, 779.295))) { alpha = poly6_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1001.888, 452.586), vec2(912.151, 779.295), vec2(912.151, 452.586))) { alpha = poly6_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(912.151, 452.586), vec2(912.151, 779.295), vec2(867.282, 779.295))) { alpha = poly7_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(912.151, 452.586), vec2(867.282, 779.295), vec2(867.282, 452.586))) { alpha = poly7_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(957.020, 746.624), vec2(1010.862, 615.940), vec2(957.020, 615.940))) { alpha = poly8_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1010.862, 615.940), vec2(957.020, 746.624), vec2(957.020, 615.940))) { alpha = poly9_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1010.862, 615.940), vec2(957.020, 615.940), vec2(957.020, 485.256))) { alpha = poly10_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1010.862, 615.940), vec2(957.020, 485.256), vec2(957.020, 615.940))) { alpha = poly11_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(957.020, 485.256), vec2(903.177, 615.940), vec2(957.020, 615.940))) { alpha = poly12_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(903.177, 615.940), vec2(957.020, 746.624), vec2(957.020, 615.940))) { alpha = poly13_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(903.177, 615.940), vec2(957.020, 615.940), vec2(957.020, 746.624))) { alpha = poly14_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(957.020, 485.256), vec2(957.020, 615.940), vec2(903.177, 615.940))) { alpha = poly15_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1001.072, 437.435), vec2(994.464, 380.713), vec2(1031.909, 380.713))) { alpha = poly16_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(1001.072, 437.435), vec2(1031.909, 380.713), vec2(1045.125, 437.435))) { alpha = poly16_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(994.464, 380.713), vec2(1001.072, 437.435), vec2(912.967, 437.435))) { alpha = poly17_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(994.464, 380.713), vec2(912.967, 437.435), vec2(919.575, 380.713))) { alpha = poly17_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(919.575, 380.713), vec2(912.967, 437.435), vec2(868.914, 437.435))) { alpha = poly18_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(919.575, 380.713), vec2(868.914, 437.435), vec2(882.130, 380.713))) { alpha = poly18_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(994.053, 365.170), vec2(988.641, 316.747), vec2(1019.304, 316.747))) { alpha = poly19_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(994.053, 365.170), vec2(1019.304, 316.747), vec2(1030.126, 365.170))) { alpha = poly19_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(988.641, 316.747), vec2(994.053, 365.170), vec2(921.904, 365.170))) { alpha = poly20_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(988.641, 316.747), vec2(921.904, 365.170), vec2(927.315, 316.747))) { alpha = poly20_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(927.315, 316.747), vec2(921.904, 365.170), vec2(885.830, 365.170))) { alpha = poly21_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(927.315, 316.747), vec2(885.830, 365.170), vec2(896.652, 316.747))) { alpha = poly21_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(982.947, 267.474), vec2(987.215, 301.938), vec2(930.308, 301.938))) { alpha = poly22_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(982.947, 267.474), vec2(930.308, 301.938), vec2(934.576, 267.474))) { alpha = poly22_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(987.215, 301.938), vec2(982.947, 267.474), vec2(1007.131, 267.474))) { alpha = poly23_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(987.215, 301.938), vec2(1007.131, 267.474), vec2(1015.668, 301.938))) { alpha = poly23_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(934.576, 267.474), vec2(930.308, 301.938), vec2(901.855, 301.938))) { alpha = poly24_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(934.576, 267.474), vec2(901.855, 301.938), vec2(910.392, 267.474))) { alpha = poly24_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(982.832, 251.899), vec2(979.457, 218.638), vec2(998.586, 218.638))) { alpha = poly25_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(982.832, 251.899), vec2(998.586, 218.638), vec2(1005.337, 251.899))) { alpha = poly25_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(979.457, 218.638), vec2(982.832, 251.899), vec2(937.823, 251.899))) { alpha = poly26_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(979.457, 218.638), vec2(937.823, 251.899), vec2(941.199, 218.638))) { alpha = poly26_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(941.199, 218.638), vec2(937.823, 251.899), vec2(915.319, 251.899))) { alpha = poly27_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(941.199, 218.638), vec2(915.319, 251.899), vec2(922.070, 218.638))) { alpha = poly27_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(978.920, 199.435), vec2(976.366, 170.964), vec2(990.838, 170.964))) { alpha = poly28_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(978.920, 199.435), vec2(990.838, 170.964), vec2(995.946, 199.435))) { alpha = poly28_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(976.366, 170.964), vec2(978.920, 199.435), vec2(944.869, 199.435))) { alpha = poly29_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(976.366, 170.964), vec2(944.869, 199.435), vec2(947.422, 170.964))) { alpha = poly29_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(947.422, 170.964), vec2(944.869, 199.435), vec2(927.843, 199.435))) { alpha = poly30_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(947.422, 170.964), vec2(927.843, 199.435), vec2(932.950, 170.964))) { alpha = poly30_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(962.388, 153.805), vec2(962.388, 0.000), vec2(970.837, 0.000))) { alpha = poly31_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(962.388, 153.805), vec2(970.837, 0.000), vec2(988.792, 153.805))) { alpha = poly31_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(962.388, 0.000), vec2(962.388, 153.805), vec2(935.985, 153.805))) { alpha = poly32_alpha; }
-    else if (pointInTriangle(pixelCoord, vec2(962.388, 0.000), vec2(935.985, 153.805), vec2(953.939, 0.000))) { alpha = poly32_alpha; }
+  if (pointInTriangle(pixelCoord, vec2(1001.888, 452.586), vec2(1001.888, 779.295), vec2(912.151, 779.295))) { alpha = poly0_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1001.888, 452.586), vec2(912.151, 779.295), vec2(912.151, 452.586))) { alpha = poly0_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1001.888, 779.295), vec2(1001.888, 452.586), vec2(1046.757, 452.586))) { alpha = poly1_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1001.888, 779.295), vec2(1046.757, 452.586), vec2(1046.757, 779.295))) { alpha = poly1_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(912.151, 452.586), vec2(912.151, 779.295), vec2(867.282, 779.295))) { alpha = poly2_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(912.151, 452.586), vec2(867.282, 779.295), vec2(867.282, 452.586))) { alpha = poly2_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(957.020, 746.624), vec2(1010.862, 615.940), vec2(957.020, 615.940))) { alpha = poly3_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1010.862, 615.940), vec2(957.020, 746.624), vec2(957.020, 615.940))) { alpha = poly4_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1010.862, 615.940), vec2(957.020, 615.940), vec2(957.020, 485.256))) { alpha = poly5_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1010.862, 615.940), vec2(957.020, 485.256), vec2(957.020, 615.940))) { alpha = poly6_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(957.020, 485.256), vec2(903.177, 615.940), vec2(957.020, 615.940))) { alpha = poly7_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(903.177, 615.940), vec2(957.020, 746.624), vec2(957.020, 615.940))) { alpha = poly8_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(903.177, 615.940), vec2(957.020, 615.940), vec2(957.020, 746.624))) { alpha = poly9_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(957.020, 485.256), vec2(957.020, 615.940), vec2(903.177, 615.940))) { alpha = poly10_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1001.072, 437.435), vec2(994.464, 380.713), vec2(1031.909, 380.713))) { alpha = poly11_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1001.072, 437.435), vec2(1031.909, 380.713), vec2(1045.125, 437.435))) { alpha = poly11_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(994.464, 380.713), vec2(1001.072, 437.435), vec2(912.967, 437.435))) { alpha = poly12_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(994.464, 380.713), vec2(912.967, 437.435), vec2(919.575, 380.713))) { alpha = poly12_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(919.575, 380.713), vec2(912.967, 437.435), vec2(868.914, 437.435))) { alpha = poly13_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(919.575, 380.713), vec2(868.914, 437.435), vec2(882.130, 380.713))) { alpha = poly13_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(994.053, 365.170), vec2(988.641, 316.747), vec2(1019.304, 316.747))) { alpha = poly14_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(994.053, 365.170), vec2(1019.304, 316.747), vec2(1030.126, 365.170))) { alpha = poly14_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(988.641, 316.747), vec2(994.053, 365.170), vec2(921.904, 365.170))) { alpha = poly15_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(988.641, 316.747), vec2(921.904, 365.170), vec2(927.315, 316.747))) { alpha = poly15_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(927.315, 316.747), vec2(921.904, 365.170), vec2(885.830, 365.170))) { alpha = poly16_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(927.315, 316.747), vec2(885.830, 365.170), vec2(896.652, 316.747))) { alpha = poly16_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(982.947, 267.474), vec2(987.215, 301.938), vec2(930.308, 301.938))) { alpha = poly17_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(982.947, 267.474), vec2(930.308, 301.938), vec2(934.576, 267.474))) { alpha = poly17_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(987.215, 301.938), vec2(982.947, 267.474), vec2(1007.131, 267.474))) { alpha = poly18_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(987.215, 301.938), vec2(1007.131, 267.474), vec2(1015.668, 301.938))) { alpha = poly18_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(934.576, 267.474), vec2(930.308, 301.938), vec2(901.855, 301.938))) { alpha = poly19_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(934.576, 267.474), vec2(901.855, 301.938), vec2(910.392, 267.474))) { alpha = poly19_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(982.832, 251.899), vec2(979.457, 218.638), vec2(998.586, 218.638))) { alpha = poly20_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(982.832, 251.899), vec2(998.586, 218.638), vec2(1005.337, 251.899))) { alpha = poly20_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(979.457, 218.638), vec2(982.832, 251.899), vec2(937.823, 251.899))) { alpha = poly21_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(979.457, 218.638), vec2(937.823, 251.899), vec2(941.199, 218.638))) { alpha = poly21_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(941.199, 218.638), vec2(937.823, 251.899), vec2(915.319, 251.899))) { alpha = poly22_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(941.199, 218.638), vec2(915.319, 251.899), vec2(922.070, 218.638))) { alpha = poly22_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(978.920, 199.435), vec2(976.366, 170.964), vec2(990.838, 170.964))) { alpha = poly23_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(978.920, 199.435), vec2(990.838, 170.964), vec2(995.946, 199.435))) { alpha = poly23_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(976.366, 170.964), vec2(978.920, 199.435), vec2(944.869, 199.435))) { alpha = poly24_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(976.366, 170.964), vec2(944.869, 199.435), vec2(947.422, 170.964))) { alpha = poly24_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(947.422, 170.964), vec2(944.869, 199.435), vec2(927.843, 199.435))) { alpha = poly25_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(947.422, 170.964), vec2(927.843, 199.435), vec2(932.950, 170.964))) { alpha = poly25_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(962.388, 153.805), vec2(962.388, 0.000), vec2(970.837, 0.000))) { alpha = poly26_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(962.388, 153.805), vec2(970.837, 0.000), vec2(988.792, 153.805))) { alpha = poly26_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(962.388, 0.000), vec2(962.388, 153.805), vec2(935.985, 153.805))) { alpha = poly27_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(962.388, 0.000), vec2(935.985, 153.805), vec2(953.939, 0.000))) { alpha = poly27_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(957.020, 912.098), vec2(928.350, 891.223), vec2(928.350, 822.344))) { alpha = poly28_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(957.020, 912.098), vec2(928.350, 822.344), vec2(892.387, 802.338))) { alpha = poly28_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(957.020, 912.098), vec2(892.387, 802.338), vec2(957.020, 755.277))) { alpha = poly28_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(957.020, 912.098), vec2(957.020, 755.277), vec2(1021.652, 802.338))) { alpha = poly28_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(957.020, 912.098), vec2(1021.652, 802.338), vec2(985.689, 822.344))) { alpha = poly28_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(957.020, 912.098), vec2(985.689, 822.344), vec2(985.689, 891.223))) { alpha = poly28_alpha; }
   
   // Apply color parameter based on alpha
   if (alpha > 0.0) {

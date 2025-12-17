@@ -26,5 +26,7 @@ python3 svg_to_isf.py low_poly_dragonfly_new.svg --isf
 * copy isf shader code and replace in ossia score
 * compile -- done
 
+!! svg elements have to be polygons not path to get recognized by svg_to_isf.py
+
 # blender 
 normals shif+n alt+n 
