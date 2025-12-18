@@ -17,6 +17,29 @@ cmake .
 cmake --build .
 
 
+# blender sh4lt addon
+~/apps/blender-4.5.5-linux-x64
+mkdir wheels
+
+git clone https://gitlab.com/sh4lt/sh4lt.git
+./python3.11 -m pip install sh4lt
+./python3.11 -m pip install git+https://gitlab.com/sh4lt/sh4lt.git
+./python3.11 -m pip install sh4lt-0.2.0
+cp /home/lichtmaster/git/sh4lt/dist/sh4lt-0.2.0* .
+./bin/python3.11 -m pip wheel sh4lt-0.2.0-cp310-cp310-linux_x86_64.whl -w ~/apps/blender-4.5.5-linux-x64/4.5/python/wheels
+./bin/python3.11 -m pip wheel ~/apps/blender-4.5.5-linux-x64/4.5/python/wheels/sh4lt-0.2.0-cp310-cp310-linux_x86_64.whl
+./bin/python3.11 -m pip wheel sh4lt-0.2.0 ./wheels/
+./bin/python3.11 -m pip wheel sh4lt-0.2.0 ./wheels/sh4lt-0.2.0-cp310-cp310-linux_x86_64.whl 
+./4.5/python/bin/python3.11 -p pip wheel sh4lt-0.2.0 ./wheels
+./4.5/python/bin/python3.11 -m pip wheel sh4lt-0.2.0 ./wheels
+./4.5/python/bin/python3.11 -m pip install ./wheels/sh4lt-0.2.0-cp310-cp310-linux_x86_64.whl 
+
+./python3.11 -m pip install sh4lt-0.2.0
+
+https://docs.blender.org/manual/en/latest/advanced/extensions/python_wheels.html
+python -m build --wheel
+python setup.py bdist_wheel
+
 # mapping
 * blender edit mode selected mesh
 * uv unwrap projection bounds
