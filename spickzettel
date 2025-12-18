@@ -16,6 +16,9 @@ after add new code like addon or plugin
 cmake .
 cmake --build .
 
+# install python  osc in blender
+blender-4.5.5-linux-x64/4.5/python/bin$ ./python3.11 -m pip install python-osc 
+
 
 # mapping
 * blender edit mode selected mesh
