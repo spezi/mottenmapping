@@ -1,0 +1,697 @@
+/*{
+  "DESCRIPTION": "Low Poly - Individual Polygon Alpha Control",
+  "CREDIT": "Generated from SVG",
+  "ISFVSN": "2",
+  "INPUTS": [
+    {
+      "NAME": "globalAlpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Global Alpha"
+    },
+    {
+      "NAME": "poly0_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 1 Alpha"
+    },
+    {
+      "NAME": "poly1_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 2 Alpha"
+    },
+    {
+      "NAME": "poly2_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 3 Alpha"
+    },
+    {
+      "NAME": "poly3_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 4 Alpha"
+    },
+    {
+      "NAME": "poly4_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 5 Alpha"
+    },
+    {
+      "NAME": "poly5_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 6 Alpha"
+    },
+    {
+      "NAME": "poly6_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 7 Alpha"
+    },
+    {
+      "NAME": "poly7_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 8 Alpha"
+    },
+    {
+      "NAME": "poly8_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 9 Alpha"
+    },
+    {
+      "NAME": "poly9_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 10 Alpha"
+    },
+    {
+      "NAME": "poly10_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 11 Alpha"
+    },
+    {
+      "NAME": "poly11_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 12 Alpha"
+    },
+    {
+      "NAME": "poly12_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 13 Alpha"
+    },
+    {
+      "NAME": "poly13_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 14 Alpha"
+    },
+    {
+      "NAME": "poly14_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 15 Alpha"
+    },
+    {
+      "NAME": "poly15_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 16 Alpha"
+    },
+    {
+      "NAME": "poly16_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 17 Alpha"
+    },
+    {
+      "NAME": "poly17_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 18 Alpha"
+    },
+    {
+      "NAME": "poly18_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 19 Alpha"
+    },
+    {
+      "NAME": "poly19_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 20 Alpha"
+    },
+    {
+      "NAME": "poly20_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 21 Alpha"
+    },
+    {
+      "NAME": "poly21_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 22 Alpha"
+    },
+    {
+      "NAME": "poly22_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 23 Alpha"
+    },
+    {
+      "NAME": "poly23_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 24 Alpha"
+    },
+    {
+      "NAME": "poly24_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 25 Alpha"
+    },
+    {
+      "NAME": "poly25_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 26 Alpha"
+    },
+    {
+      "NAME": "poly26_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 27 Alpha"
+    },
+    {
+      "NAME": "poly27_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 28 Alpha"
+    },
+    {
+      "NAME": "poly28_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 29 Alpha"
+    },
+    {
+      "NAME": "poly29_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 30 Alpha"
+    },
+    {
+      "NAME": "poly30_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 31 Alpha"
+    },
+    {
+      "NAME": "poly31_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 32 Alpha"
+    },
+    {
+      "NAME": "poly32_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 33 Alpha"
+    },
+    {
+      "NAME": "poly33_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 34 Alpha"
+    },
+    {
+      "NAME": "poly34_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 35 Alpha"
+    },
+    {
+      "NAME": "poly35_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 36 Alpha"
+    },
+    {
+      "NAME": "poly36_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 37 Alpha"
+    },
+    {
+      "NAME": "poly37_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 38 Alpha"
+    },
+    {
+      "NAME": "poly38_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 39 Alpha"
+    },
+    {
+      "NAME": "poly39_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 40 Alpha"
+    },
+    {
+      "NAME": "poly40_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 41 Alpha"
+    },
+    {
+      "NAME": "poly41_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 42 Alpha"
+    },
+    {
+      "NAME": "poly42_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 43 Alpha"
+    },
+    {
+      "NAME": "poly43_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 44 Alpha"
+    },
+    {
+      "NAME": "poly44_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 45 Alpha"
+    },
+    {
+      "NAME": "poly45_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 46 Alpha"
+    },
+    {
+      "NAME": "poly46_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 47 Alpha"
+    },
+    {
+      "NAME": "poly47_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 48 Alpha"
+    },
+    {
+      "NAME": "poly48_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 49 Alpha"
+    },
+    {
+      "NAME": "poly49_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 50 Alpha"
+    },
+    {
+      "NAME": "poly50_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 51 Alpha"
+    },
+    {
+      "NAME": "poly51_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 52 Alpha"
+    },
+    {
+      "NAME": "poly52_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 53 Alpha"
+    },
+    {
+      "NAME": "poly53_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 54 Alpha"
+    },
+    {
+      "NAME": "poly54_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 55 Alpha"
+    },
+    {
+      "NAME": "poly55_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 56 Alpha"
+    },
+    {
+      "NAME": "poly56_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 57 Alpha"
+    },
+    {
+      "NAME": "poly57_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 58 Alpha"
+    },
+    {
+      "NAME": "poly58_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 59 Alpha"
+    },
+    {
+      "NAME": "poly59_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 60 Alpha"
+    },
+    {
+      "NAME": "poly60_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 61 Alpha"
+    },
+    {
+      "NAME": "poly61_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 62 Alpha"
+    },
+    {
+      "NAME": "poly62_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 63 Alpha"
+    },
+    {
+      "NAME": "poly63_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 64 Alpha"
+    },
+    {
+      "NAME": "poly64_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 65 Alpha"
+    },
+    {
+      "NAME": "poly65_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 66 Alpha"
+    },
+    {
+      "NAME": "poly66_alpha",
+      "TYPE": "float",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0,
+      "LABEL": "Polygon 67 Alpha"
+    },
+    {
+      "NAME": "polygonColor",
+      "TYPE": "color",
+      "DEFAULT": [0.8, 0.8, 0.8, 1.0],
+      "LABEL": "Polygon Color"
+    },
+    {
+      "NAME": "backgroundColor",
+      "TYPE": "color",
+      "DEFAULT": [0.0, 0.0, 0.0, 0.0],
+      "LABEL": "Background Color"
+    }
+  ]
+}*/
+
+// Point-in-triangle test using barycentric coordinates
+bool pointInTriangle(vec2 p, vec2 a, vec2 b, vec2 c) {
+  vec2 v0 = c - a;
+  vec2 v1 = b - a;
+  vec2 v2 = p - a;
+  
+  float dot00 = dot(v0, v0);
+  float dot01 = dot(v0, v1);
+  float dot02 = dot(v0, v2);
+  float dot11 = dot(v1, v1);
+  float dot12 = dot(v1, v2);
+  
+  float denom = dot00 * dot11 - dot01 * dot01;
+  if (abs(denom) < 0.0001) return false;
+  
+  float invDenom = 1.0 / denom;
+  float u = (dot11 * dot02 - dot01 * dot12) * invDenom;
+  float v = (dot00 * dot12 - dot01 * dot02) * invDenom;
+  
+  return (u >= -0.0001) && (v >= -0.0001) && (u + v <= 1.0001);
+}
+
+void main() {
+  vec2 uv = isf_FragNormCoord;
+  vec2 pixelCoord = uv * vec2(1920.0, 1080.0);
+  
+  vec4 color = backgroundColor;
+  float alpha = 0.0;
+  
+  if (pointInTriangle(pixelCoord, vec2(1469.469, 105.253), vec2(1017.645, 539.741), vec2(1228.707, 46.680))) { alpha = poly0_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1543.840, 350.095), vec2(1017.645, 539.741), vec2(1469.469, 105.253))) { alpha = poly1_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1458.773, 477.185), vec2(1017.645, 539.741), vec2(1543.840, 350.095))) { alpha = poly2_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1166.084, 813.347), vec2(1016.194, 566.944), vec2(1888.052, 1080.000))) { alpha = poly3_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1166.084, 813.347), vec2(1888.052, 1080.000), vec2(1500.210, 999.676))) { alpha = poly3_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1228.707, 46.680), vec2(1017.645, 539.741), vec2(1069.563, 226.492))) { alpha = poly4_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1888.052, 1080.000), vec2(1016.194, 566.944), vec2(1920.000, 891.953))) { alpha = poly5_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(690.224, 46.680), vec2(847.535, 226.491), vec2(898.675, 539.741))) { alpha = poly6_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(450.254, 105.253), vec2(690.224, 46.680), vec2(898.675, 539.741))) { alpha = poly7_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(374.542, 350.096), vec2(450.254, 105.253), vec2(898.675, 539.741))) { alpha = poly8_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(458.244, 477.185), vec2(374.542, 350.096), vec2(898.675, 539.741))) { alpha = poly9_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(181.239, 624.035), vec2(771.768, 554.684), vec2(900.241, 566.944))) { alpha = poly10_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(0.000, 891.953), vec2(181.239, 624.035), vec2(900.241, 566.944))) { alpha = poly11_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(30.652, 1080.000), vec2(0.000, 891.953), vec2(900.241, 566.944))) { alpha = poly12_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(751.218, 813.347), vec2(417.760, 999.676), vec2(30.652, 1080.000))) { alpha = poly13_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(751.218, 813.347), vec2(30.652, 1080.000), vec2(900.241, 566.944))) { alpha = poly13_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(992.733, 665.094), vec2(992.733, 385.905), vec2(1025.052, 363.786))) { alpha = poly14_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(992.733, 665.094), vec2(1025.052, 363.786), vec2(1025.052, 626.330))) { alpha = poly14_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(992.733, 385.905), vec2(992.733, 665.094), vec2(918.793, 665.094))) { alpha = poly15_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(992.733, 385.905), vec2(918.793, 665.094), vec2(918.793, 385.905))) { alpha = poly15_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(918.793, 385.905), vec2(918.793, 665.094), vec2(885.990, 626.330))) { alpha = poly16_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(918.793, 385.905), vec2(885.990, 626.330), vec2(885.990, 363.785))) { alpha = poly16_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(991.568, 368.590), vec2(985.875, 317.915), vec2(1012.903, 302.995))) { alpha = poly17_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(991.568, 368.590), vec2(1012.903, 302.995), vec2(1023.037, 348.102))) { alpha = poly17_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(985.875, 317.915), vec2(991.568, 368.590), vec2(919.859, 368.590))) { alpha = poly18_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(985.875, 317.915), vec2(919.859, 368.590), vec2(925.479, 317.915))) { alpha = poly18_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(925.479, 317.915), vec2(919.859, 368.590), vec2(887.926, 348.102))) { alpha = poly19_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(925.479, 317.915), vec2(887.926, 348.102), vec2(898.059, 302.995))) { alpha = poly19_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(985.655, 305.876), vec2(981.056, 263.374), vec2(1003.494, 253.306))) { alpha = poly20_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(985.655, 305.876), vec2(1003.494, 253.306), vec2(1011.833, 292.005))) { alpha = poly20_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(981.056, 263.374), vec2(985.655, 305.876), vec2(927.277, 305.876))) { alpha = poly21_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(981.056, 263.374), vec2(927.277, 305.876), vec2(931.805, 263.374))) { alpha = poly21_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(931.805, 263.374), vec2(927.277, 305.876), vec2(900.644, 292.004))) { alpha = poly22_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(931.805, 263.374), vec2(900.644, 292.004), vec2(908.983, 253.306))) { alpha = poly22_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(979.881, 250.798), vec2(976.313, 220.912), vec2(994.197, 214.315))) { alpha = poly23_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(979.881, 250.798), vec2(994.197, 214.315), vec2(1000.788, 241.911))) { alpha = poly23_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(976.313, 220.912), vec2(979.881, 250.798), vec2(934.226, 250.798))) { alpha = poly24_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(976.313, 220.912), vec2(934.226, 250.798), vec2(937.732, 220.912))) { alpha = poly24_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(976.187, 207.752), vec2(973.398, 179.518), vec2(987.629, 175.345))) { alpha = poly25_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(976.187, 207.752), vec2(987.629, 175.345), vec2(992.846, 202.000))) { alpha = poly25_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(973.398, 179.518), vec2(976.187, 207.752), vec2(940.339, 207.752))) { alpha = poly26_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(973.398, 179.518), vec2(940.339, 207.752), vec2(943.067, 179.518))) { alpha = poly26_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(943.067, 179.518), vec2(940.339, 207.752), vec2(923.288, 202.000))) { alpha = poly27_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(943.067, 179.518), vec2(923.288, 202.000), vec2(928.505, 175.345))) { alpha = poly27_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(972.973, 163.736), vec2(970.882, 139.891), vec2(981.728, 137.487))) { alpha = poly28_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(972.973, 163.736), vec2(981.728, 137.487), vec2(985.686, 160.368))) { alpha = poly28_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(970.882, 139.891), vec2(972.973, 163.736), vec2(945.976, 163.736))) { alpha = poly29_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(970.882, 139.891), vec2(945.976, 163.736), vec2(948.014, 139.891))) { alpha = poly29_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(948.014, 139.891), vec2(945.976, 163.736), vec2(932.912, 160.368))) { alpha = poly30_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(948.014, 139.891), vec2(932.912, 160.368), vec2(936.870, 137.487))) { alpha = poly30_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(959.840, 125.858), vec2(959.727, 0.000), vec2(966.218, 0.096))) { alpha = poly31_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(959.840, 125.858), vec2(966.218, 0.096), vec2(980.120, 123.612))) { alpha = poly31_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(959.727, 0.000), vec2(959.840, 125.858), vec2(939.231, 123.612))) { alpha = poly32_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(959.727, 0.000), vec2(939.231, 123.612), vec2(953.133, 0.096))) { alpha = poly32_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1000.606, 530.557), vec2(955.803, 643.338), vec2(955.928, 546.271))) { alpha = poly33_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1000.606, 530.557), vec2(955.928, 546.271), vec2(955.803, 417.775))) { alpha = poly34_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(955.803, 417.775), vec2(955.928, 546.271), vec2(911.000, 530.557))) { alpha = poly35_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(911.000, 530.557), vec2(955.928, 546.271), vec2(955.803, 643.338))) { alpha = poly36_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(911.000, 530.557), vec2(955.803, 643.338), vec2(955.685, 515.745))) { alpha = poly37_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(955.803, 643.338), vec2(1000.606, 530.557), vec2(955.685, 515.745))) { alpha = poly38_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1000.606, 530.557), vec2(955.803, 417.775), vec2(955.685, 515.745))) { alpha = poly39_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(955.803, 417.775), vec2(911.000, 530.557), vec2(955.685, 515.745))) { alpha = poly40_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1061.721, 755.054), vec2(1028.880, 816.315), vec2(999.001, 755.054))) { alpha = poly41_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1061.721, 755.054), vec2(999.001, 755.054), vec2(1028.880, 665.921))) { alpha = poly42_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1028.880, 665.921), vec2(999.001, 755.054), vec2(978.284, 674.548))) { alpha = poly43_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(978.284, 674.548), vec2(999.001, 755.054), vec2(978.284, 764.748))) { alpha = poly44_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(978.284, 764.748), vec2(999.001, 755.054), vec2(1028.880, 816.315))) { alpha = poly45_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1074.914, 764.748), vec2(1028.880, 816.315), vec2(1061.721, 755.054))) { alpha = poly46_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1028.880, 816.315), vec2(1074.914, 764.748), vec2(1074.914, 674.548))) { alpha = poly47_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1028.880, 816.315), vec2(1074.914, 674.548), vec2(1028.880, 665.921))) { alpha = poly47_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1028.880, 816.315), vec2(1028.880, 665.921), vec2(978.284, 674.548))) { alpha = poly47_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1028.880, 816.315), vec2(978.284, 674.548), vec2(978.284, 764.748))) { alpha = poly47_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(912.593, 755.054), vec2(882.560, 816.315), vec2(849.873, 755.054))) { alpha = poly48_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(912.593, 755.054), vec2(849.873, 755.054), vec2(882.560, 665.921))) { alpha = poly49_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(882.560, 665.921), vec2(849.873, 755.054), vec2(836.289, 674.548))) { alpha = poly50_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(836.289, 674.548), vec2(849.873, 755.054), vec2(836.289, 764.748))) { alpha = poly51_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(836.289, 764.748), vec2(849.873, 755.054), vec2(882.560, 816.315))) { alpha = poly52_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(882.560, 816.315), vec2(932.919, 764.748), vec2(932.919, 674.548))) { alpha = poly53_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(882.560, 816.315), vec2(932.919, 674.548), vec2(882.560, 665.921))) { alpha = poly53_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(882.560, 816.315), vec2(882.560, 665.921), vec2(836.289, 674.548))) { alpha = poly53_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(882.560, 816.315), vec2(836.289, 674.548), vec2(836.289, 764.748))) { alpha = poly53_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(955.521, 607.030), vec2(955.685, 698.267), vec2(872.084, 670.040))) { alpha = poly54_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(872.084, 670.040), vec2(955.685, 698.267), vec2(955.521, 733.051))) { alpha = poly55_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(872.084, 670.040), vec2(955.521, 733.051), vec2(1038.958, 670.040))) { alpha = poly56_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(872.084, 670.040), vec2(1038.958, 670.040), vec2(955.521, 607.030))) { alpha = poly56_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1737.465, 624.035), vec2(1016.194, 566.944), vec2(1145.534, 554.684))) { alpha = poly57_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1920.000, 891.953), vec2(1016.194, 566.944), vec2(1737.465, 624.035))) { alpha = poly58_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(937.732, 220.912), vec2(934.226, 250.798), vec2(912.917, 241.911))) { alpha = poly59_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(937.732, 220.912), vec2(912.917, 241.911), vec2(919.508, 214.315))) { alpha = poly59_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1028.880, 665.921), vec2(1074.914, 674.548), vec2(1061.721, 755.054))) { alpha = poly60_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1074.914, 674.548), vec2(1074.914, 764.748), vec2(1061.721, 755.054))) { alpha = poly61_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(882.560, 665.921), vec2(932.919, 674.548), vec2(912.593, 755.054))) { alpha = poly62_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(932.919, 674.548), vec2(932.919, 764.748), vec2(912.593, 755.054))) { alpha = poly63_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(932.919, 764.748), vec2(882.560, 816.315), vec2(912.593, 755.054))) { alpha = poly64_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1038.958, 670.040), vec2(955.521, 733.051), vec2(955.685, 698.267))) { alpha = poly65_alpha; }
+    else if (pointInTriangle(pixelCoord, vec2(1038.958, 670.040), vec2(955.685, 698.267), vec2(955.521, 607.030))) { alpha = poly66_alpha; }
+  
+  // Apply color parameter based on alpha
+  if (alpha > 0.0) {
+    color = polygonColor;
+    color.a = alpha * globalAlpha;
+  }
+  gl_FragColor = color;
+}
