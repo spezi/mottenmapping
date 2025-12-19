@@ -57,3 +57,8 @@ python artnet-test.py --ip 192.168.1.100 --universe 0 --value 0
 
 gst-launch-1.0 sh4ltsrc label=texture_fly ! videoconvert ! xvimagesink
 
+ffmpeg -framerate 30 -i %04d.png \
+       -c:v hap \
+       eyes_anim_2.mov
+
+
