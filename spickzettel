@@ -54,3 +54,6 @@ python artnet-test.py --ip 192.168.1.100 --port 6454 --universe 1 --value 128
 # Blackout (all channels to 0)
 python artnet-test.py --ip 192.168.1.100 --universe 0 --value 0
 
+
+gst-launch-1.0 sh4ltsrc label=texture_fly ! videoconvert ! xvimagesink
+
